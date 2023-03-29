@@ -13,3 +13,5 @@ The bookings table contains information about each 'bookings' of a passenger, in
 
 airlines:
 The airlines table contains information about  'airlines',  including airline_id, airline_name.
+
+Some operations like CREATE, INSERT , SELECT , UPDATE , DELETE are also performed .
