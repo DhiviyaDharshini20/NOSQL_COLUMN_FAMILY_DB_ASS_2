@@ -6,7 +6,7 @@ cqlsh> USE  flights;
 	
 # CREATING TABLES bookings and airlines
 	
-cqlsh:flights> CREATE TABLE bookings (booking_id varchar PRIMARY KEY, passenger_name text, flight_no varchar, dep_date timestamp,arrival_date timestamp, seat_no varchar, PRIMARY KEY (booking_id));
+cqlsh:flights> CREATE TABLE bookings (booking_id varchar PRIMARY KEY, passenger_name text, flight_no varchar, dep_date timestamp, arrival_date timestamp, seat_no varchar, PRIMARY KEY (booking_id));
 cqlsh:flights> CREATE TABLE airlines (airline_id varchar PRIMARY KEY, airline_name text);
 
 	
@@ -15,7 +15,7 @@ cqlsh:flights> CREATE TABLE airlines (airline_id varchar PRIMARY KEY, airline_na
 cqlsh:flights> INSERT INTO bookings (booking_id, passenger_name, flight_no, dep_date, arrival_date, seat_no) VALUES ('JF536', 'Ramya', 'AA123', '2023-04-15', '2023-05-19','12A');
 cqlsh:flights> INSERT INTO bookings (booking_id, passenger_name, flight_no, dep_date, arrival_date, seat_no) VALUES ('MI624', 'Siva', 'UA456', '2023-04-20', '2023-05-26', '25C');
 cqlsh:flights> INSERT INTO bookings (booking_id, passenger_name, flight_no, dep_date, arrival_date, seat_no) VALUES ('NY853', 'Raj', 'DL789', '2023-04-25', '2023-05-09', '8D');
-cqlsh:flights> INSERT INTO bookings (booking_id, passenger_name, flight_no, dep_date, arrival_date, seat_no) VALUES ('DU538', 'Deepika', 'BC103', '2023-05-16', '2023-06-18', '18A');
+cqlsh:flights> INSERT INTO bookings (booking_id, passenger_name, flight_no, dep_date, arrival_date, seat_no) VALUES ('DU538', 'Deepa', 'BC103', '2023-05-16', '2023-06-18', '18A');
 cqlsh:flights> INSERT INTO bookings (booking_id, passenger_name, flight_no, dep_date, arrival_date, seat_no) VALUES ('CU849', 'Devi', 'AP161', '2023-05-03', '2023-07-28', '25J');
 	
 #DISPLAYING THE TABLE bookings
@@ -25,7 +25,7 @@ cqlsh:flights> SELECT * FROM bookings;
  booking_id | arrival_date | dep_date    | flight_no | passenger_name | seat_no
 ------------+--------------+-------------+-----------+----------------+--------
       CU849 |   2023-07-28 |  2023-05-03 |     AP161 |           Devi |    25J
-      DU538 |   2023-06-18 |  2023-05-16 |     BC103 |        Deepika |    18A
+      DU538 |   2023-06-18 |  2023-05-16 |     BC103 |          Deepa |    18A
       JF536 |   2023-05-19 |  2023-04-15 |     AA123 |          Ramya |    12A
       MI624 |   2023-05-26 |  2023-04-20 |     UA456 |           Siva |    25C
       NY853 |   2023-05-09 |  2023-04-25 |     DL789 |            Raj |     8D
